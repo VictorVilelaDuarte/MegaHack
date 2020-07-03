@@ -7,8 +7,12 @@ import App from './App';
 export default function src() {
   return (
     <>
-      <StatusBar backgroundColor="#3b131a" barStyle="dark-content" />
       <SafeAreaProvider>
+        <StatusBar
+          backgroundColor="#FDDC13"
+          barStyle="dark-content"
+          translucent
+        />
         <App />
       </SafeAreaProvider>
     </>

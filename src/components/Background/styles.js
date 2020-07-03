@@ -9,5 +9,5 @@ export const Container = styled.View`
 export const Top = styled(LinearGradient).attrs({
   colors: ['#FDDC13', '#fff'],
 })`
-  height: 275px;
+  height: 300px;
 `;
