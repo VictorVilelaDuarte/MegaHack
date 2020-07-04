@@ -2,7 +2,6 @@ import styled from 'styled-components/native';
 
 export const Container = styled.View`
   position: absolute;
-  height: 100%;
   width: 100%;
   align-items: center;
 `;
@@ -34,5 +33,11 @@ export const PromotionView = styled.ScrollView`
   width: 100%;
   flex-direction: row;
   flex-wrap: nowrap;
-  /* align-items: center; */
+`;
+
+export const OptionsView = styled.View`
+  margin-top: 10px;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
 `;
