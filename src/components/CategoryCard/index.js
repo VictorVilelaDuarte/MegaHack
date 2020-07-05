@@ -1,8 +1,8 @@
 import React from 'react';
-import {StyleSheet} from 'react-native';
-import {Container, Title, TitleView} from './styles';
+import {StyleSheet, ImageBackground} from 'react-native';
+import {Container, Title, TitleView, Image} from './styles';
 
-const CategoryCard = ({title}) => {
+const CategoryCard = ({image}) => {
   const styles = StyleSheet.create({
     card: {
       shadowColor: '#000',
@@ -19,9 +19,7 @@ const CategoryCard = ({title}) => {
 
   return (
     <Container style={styles.card}>
-      <TitleView>
-        <Title>{title}</Title>
-      </TitleView>
+      <ImageBackground source={image} style={{width: 165, height: 200}} />
     </Container>
   );
 };

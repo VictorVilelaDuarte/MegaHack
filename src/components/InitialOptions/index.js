@@ -19,8 +19,8 @@ const InitialOptions = ({text, image}) => {
   });
   return (
     <Container>
-      <Circle style={styles.circle} >
-        <Image style={{resizeMode: 'contain'}} source={image}/>
+      <Circle style={styles.circle}>
+        <Image style={{resizeMode: 'contain'}} source={image} />
       </Circle>
       <TextView>
         <Text>{text}</Text>

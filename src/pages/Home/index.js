@@ -45,16 +45,6 @@ const Home = ({navigation}) => {
             <Image style={{resizeMode: 'contain'}} source={Cart} />
           </ShopIcon>
         </SearchView>
-        <TouchableOpacity
-          style={{
-            borderColor: `#000`,
-            borderStyle: 'solid',
-            borderWidth: 1,
-            width: 40,
-            height: 40,
-          }}
-          onPress={() => navigation.navigate('Video')}
-        />
         <PromotionView
           horizontal
           decelerationRate="fast"
@@ -64,7 +54,9 @@ const Home = ({navigation}) => {
           <PromotionCard background="#FFAE66" image={Promo} />
         </PromotionView>
         <OptionsView>
-          <InitialOptions text="Serviços Online" image={Services} />
+          <TouchableOpacity onPress={() => navigation.push('Categories')}>
+            <InitialOptions text="Serviços Online" image={Services} />
+          </TouchableOpacity>
           <InitialOptions text="Pagar com QR code" image={Qrcode} />
           <InitialOptions text="Ofertas" image={Offers} />
           <InitialOptions text="Mercado" image={Market} />

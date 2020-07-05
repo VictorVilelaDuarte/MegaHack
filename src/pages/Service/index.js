@@ -2,7 +2,6 @@ import React from 'react';
 
 import ServiceImage from '../../components/ServiceImage';
 import Modal from '../../components/Modal';
-
 import Back from '../../assets/back.png';
 import Search from '../../assets/search.png';
 import Sevice from '../../assets/serviceImage.png';
@@ -12,7 +11,7 @@ import {Container, HeaderView, HeaderIcon, Image, HeaderTitle} from './styles';
 const Service = () => {
   return (
     <>
-      <Modal detail="Consulta com Psicóloga"/>
+      <Modal detail="Consulta com Psicóloga" />
       <Container>
         <HeaderView>
           <HeaderIcon>

@@ -40,8 +40,9 @@ export const SpotlightView = styled.View`
 `;
 
 export const ListView = styled.View`
-  flex: 2;
+  flex: 1;
   width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 `;
