@@ -4,46 +4,44 @@ export const Container = styled.View`
   position: absolute;
   width: 100%;
   align-items: center;
+  flex: 1;
 `;
 
-export const SearchView = styled.View`
-  top: 15px;
-  height: 40px;
+export const HeaderView = styled.View`
+  padding-top: 5%;
+  height: 65px;
   width: 100%;
   flex-direction: row;
   justify-content: space-around;
+  background: #fddc13;
 `;
 
-export const SearchInput = styled.TextInput.attrs({
-  placeholderTextColor: '#888',
-})`
-  padding-left: 20px;
-  width: 70%;
-  background: #fff;
-  border-radius: 65px;
+export const HeaderTitle = styled.Text`
+  font-size: 20px;
+  font-weight: 500;
 `;
 
-export const ShopIcon = styled.View`
+export const HeaderIcon = styled.View`
   width: 10%;
   height: 100%;
 `;
 
 export const Image = styled.Image`
-  margin-top: 20%;
+  margin-top: 10%;
   width: 100%;
   height: 25px;
 `;
 
-export const PromotionView = styled.ScrollView`
+export const SpotlightView = styled.View`
   margin-top: 50px;
   width: 100%;
   flex-direction: row;
   flex-wrap: nowrap;
 `;
 
-export const OptionsView = styled.View`
-  margin-top: 10px;
+export const ListView = styled.View`
+  flex: 2;
   width: 100%;
   flex-direction: row;
-  justify-content: space-around;
+  flex-wrap: wrap;
 `;

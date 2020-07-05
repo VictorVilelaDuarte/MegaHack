@@ -13,3 +13,9 @@ export const Container = styled.View`
       background: ${props.background};
     `}
 `;
+
+export const Image = styled.Image`
+  margin-top: 6%;
+  width: 100%;
+  height: 130px;
+`;
