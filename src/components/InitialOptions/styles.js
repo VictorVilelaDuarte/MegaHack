@@ -19,3 +19,9 @@ export const Text = styled.Text`
   color: #777;
   text-align: center;
 `;
+
+export const Image = styled.Image`
+  margin-top: 32%;
+  width: 100%;
+  height: 25px;
+`;
