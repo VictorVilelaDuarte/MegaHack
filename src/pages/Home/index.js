@@ -1,9 +1,11 @@
 import React from 'react';
+import {Platform, TouchableOpacity} from 'react-native';
 
 import Background from '../../components/Background';
 import PromotionCard from '../../components/PromotionCard';
 import InitialOptions from '../../components/InitialOptions';
 import Card from '../../components/Card';
+import requestCameraAndAudioPermission from '../../components/permission';
 
 import {
   Container,
@@ -14,7 +16,12 @@ import {
   OptionsView,
 } from './styles';
 
-const Home = () => {
+const Home = ({navigation}) => {
+  if (Platform.OS === 'android') {
+    requestCameraAndAudioPermission().then((_) => {
+      console.log('requested!');
+    });
+  }
   return (
     <>
       <Background />
@@ -24,6 +31,16 @@ const Home = () => {
           <SearchInput placeholder="Buscar no Mercado Livre" />
           <ShopIcon />
         </SearchView>
+        <TouchableOpacity
+          style={{
+            borderColor: `#000`,
+            borderStyle: 'solid',
+            borderWidth: 1,
+            width: 40,
+            height: 40,
+          }}
+          onPress={() => navigation.navigate('Video')}
+        />
         <PromotionView
           horizontal
           decelerationRate="fast"
