@@ -1,4 +1,5 @@
 import React from 'react';
+import {TouchableOpacity} from 'react-native';
 
 import ListFilter from '../../components/ListFilter';
 import ListCard from '../../components/ListCard';
@@ -15,13 +16,15 @@ import {
 import Back from '../../assets/back.png';
 import Search from '../../assets/search.png';
 
-const List = () => {
+const List = ({navigation}) => {
   return (
     <>
       <Container>
         <HeaderView>
           <HeaderIcon>
-            <Image style={{resizeMode: 'contain'}} source={Back} />
+            <TouchableOpacity onPress={() => navigation.push('Categories')}>
+              <Image style={{resizeMode: 'contain'}} source={Back} />
+            </TouchableOpacity>
           </HeaderIcon>
           <SearchInput placeholder="Buscar no Mercado Livre" />
           <HeaderIcon>
@@ -30,12 +33,24 @@ const List = () => {
         </HeaderView>
         <ListFilter itens="72" />
         <ListView>
-          <ListCard title="Teste 1" />
-          <ListCard title="Teste 2" />
-          <ListCard title="Teste 3" />
-          <ListCard title="Teste 4" />          
-          <ListCard title="Teste 5" />          
-          <ListCard title="Teste 6" />
+          <TouchableOpacity onPress={() => navigation.push('Service')}>
+            <ListCard />
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.push('Service')}>
+            <ListCard />
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.push('Service')}>
+            <ListCard />
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.push('Service')}>
+            <ListCard />
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.push('Service')}>
+            <ListCard />
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.push('Service')}>
+            <ListCard />
+          </TouchableOpacity>
         </ListView>
       </Container>
     </>
