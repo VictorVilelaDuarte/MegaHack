@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {TouchableOpacity} from 'react-native';
 
 import ServiceImage from '../../components/ServiceImage';
 import Modal from '../../components/Modal';
@@ -17,7 +18,7 @@ import {
   ServiceDescription,
 } from './styles';
 
-const Service = () => {
+const Service = ({navigation}) => {
   const [show, setShow] = useState(true);
 
   function toogle() {
@@ -35,7 +36,9 @@ const Service = () => {
         <Container>
           <HeaderView>
             <HeaderIcon>
-              <Image style={{resizeMode: 'contain'}} source={Back} />
+              <TouchableOpacity onPress={() => navigation.push('List')}>
+                <Image style={{resizeMode: 'contain'}} source={Back} />
+              </TouchableOpacity>
             </HeaderIcon>
             <HeaderTitle>Serviços online</HeaderTitle>
             <HeaderIcon>

@@ -1,11 +1,14 @@
 import React from 'react';
 
+import {TouchableOpacity} from 'react-native';
 import {Container, Image} from './styles';
 
-const SpotlightCard = ({image}) => {
+const SpotlightCard = ({navigation, image}) => {
   return (
     <Container>
-      <Image style={{resizeMode: 'contain'}} source={image} />
+      <TouchableOpacity onPress={() => navigation.push('List')}>
+        <Image style={{resizeMode: 'contain'}} source={image} />
+      </TouchableOpacity>
     </Container>
   );
 };

@@ -29,7 +29,9 @@ const Categories = ({navigation}) => {
       <Container>
         <HeaderView>
           <HeaderIcon>
-            <Image style={{resizeMode: 'contain'}} source={Back} />
+            <TouchableOpacity onPress={() => navigation.push('Home')}>
+              <Image style={{resizeMode: 'contain'}} source={Back} />
+            </TouchableOpacity>
           </HeaderIcon>
           <HeaderTitle>Serviços online</HeaderTitle>
           <HeaderIcon>
@@ -37,7 +39,7 @@ const Categories = ({navigation}) => {
           </HeaderIcon>
         </HeaderView>
         <Banner image={BannerImage} />
-        <SpotlightCard image={SpotlightImage} />
+        <SpotlightCard navigation={navigation} image={SpotlightImage} />
         <ListView>
           <CategoryCard title="Obras e decoração" image={Decoration} />
           <CategoryCard title="Web design" image={WebDesign} />

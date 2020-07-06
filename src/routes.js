@@ -22,7 +22,6 @@ function App() {
         <Stack.Screen name="List" component={List} />
         <Stack.Screen name="Service" component={Service} />
         <Stack.Screen name="Video" component={Video} />
-        <Stack.Screen name="Service" component={Service} />
       </Stack.Navigator>
     </NavigationContainer>
   );

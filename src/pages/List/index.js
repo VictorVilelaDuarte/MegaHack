@@ -33,14 +33,24 @@ const List = ({navigation}) => {
         </HeaderView>
         <ListFilter itens="72" />
         <ListView>
-          <ListCard />
           <TouchableOpacity onPress={() => navigation.push('Service')}>
             <ListCard />
           </TouchableOpacity>
-          <ListCard />
-          <ListCard />
-          <ListCard />
-          <ListCard />
+          <TouchableOpacity onPress={() => navigation.push('Service')}>
+            <ListCard />
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.push('Service')}>
+            <ListCard />
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.push('Service')}>
+            <ListCard />
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.push('Service')}>
+            <ListCard />
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.push('Service')}>
+            <ListCard />
+          </TouchableOpacity>
         </ListView>
       </Container>
     </>
