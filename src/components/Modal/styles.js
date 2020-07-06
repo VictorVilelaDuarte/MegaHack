@@ -4,7 +4,8 @@ export const Container = styled.View`
   position: absolute;
   width: 100%;
   height: 100%;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
   flex: 1;
   z-index: 999;
   background: #fddc13;
@@ -28,32 +29,18 @@ export const Card = styled.View`
   width: 300px;
   border-radius: 10px;
   background: #fff;
-  margin-top: 30px;
-  margin-left: 30px;
   align-items: center;
-`;
-
-export const TitleView = styled.View`
-  width: 100%;
-  height: 60px;
-  padding: 10px;
-  border-bottom-width: 1px;
-  border-bottom-color: #e2e2e2;
-  align-items: center;
-`;
-
-export const Title = styled.Text`
-  font-size: 20px;
 `;
 
 export const DetailView = styled.View`
   align-items: center;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
+  padding: 5px;
 `;
 
 export const Detail = styled.Text`
-  font-size: 14px;
+  font-size: 24px;
 `;
 
 export const ImageView = styled.View`
@@ -66,7 +53,7 @@ export const ProductImage = styled.Image`
   height: 200px;
 `;
 
-export const Button = styled.View`
+export const Button = styled.TouchableOpacity`
   height: 50px;
   width: 275px;
   border-radius: 10px;

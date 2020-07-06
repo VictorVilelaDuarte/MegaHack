@@ -54,6 +54,7 @@ const Video = () => {
       top: 5,
       right: 5,
       zIndex: 100,
+      borderRadius: 8,
     },
     iconStyle: {
       fontSize: 34,

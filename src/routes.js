@@ -5,6 +5,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import Home from './pages/Home';
 import Video from './pages/Video';
 import Categories from './pages/Categories';
+import Service from './pages/Service';
 
 const Stack = createStackNavigator();
 
@@ -18,6 +19,7 @@ function App() {
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Categories" component={Categories} />
         <Stack.Screen name="Video" component={Video} />
+        <Stack.Screen name="Service" component={Service} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -1,4 +1,5 @@
 import React from 'react';
+import {Platform, TouchableOpacity} from 'react-native';
 
 import SpotlightCard from '../../components/SpotlightCard';
 import CategoryCard from '../../components/CategoryCard';
@@ -22,7 +23,7 @@ import {
   ListView,
 } from './styles';
 
-const Categories = () => {
+const Categories = ({navigation}) => {
   return (
     <>
       <Container>

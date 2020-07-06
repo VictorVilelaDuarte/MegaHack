@@ -3,6 +3,7 @@ import {StyleSheet} from 'react-native';
 
 import Sevice from '../../assets/serviceImage.png';
 import Close from '../../assets/close.png';
+import Check from '../../assets/check.png';
 
 import {
   Container,
@@ -19,7 +20,7 @@ import {
   ButtonText,
 } from './styles';
 
-const Modal = ({detail}) => {
+const Modal = ({detail, toogle}) => {
   const styles = StyleSheet.create({
     card: {
       shadowColor: '#000',
@@ -36,20 +37,14 @@ const Modal = ({detail}) => {
 
   return (
     <Container>
-      <IconView>
-        <Icon style={{resizeMode: 'contain'}} source={Close} />
-      </IconView>
       <Card style={styles.card}>
-        <TitleView>
-          <Title>Serviço contrado</Title>
-        </TitleView>
         <ImageView>
-          <ProductImage style={{resizeMode: 'contain'}} source={Sevice} />
+          <ProductImage style={{resizeMode: 'contain'}} source={Check} />
         </ImageView>
         <DetailView>
-          <Detail>{ detail }</Detail>
+          <Detail>{detail}</Detail>
         </DetailView>
-        <Button>
+        <Button onPress={() => toogle()}>
           <ButtonText>Entendi!</ButtonText>
         </Button>
       </Card>

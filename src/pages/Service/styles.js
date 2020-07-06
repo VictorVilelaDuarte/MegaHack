@@ -31,3 +31,21 @@ export const Image = styled.Image`
   width: 100%;
   height: 25px;
 `;
+
+export const ImageService = styled.Image`
+  margin-top: -4px;
+  height: 230px;
+  width: 100%;
+`;
+
+export const ViewDetails = styled.View`
+  padding: 10px;
+  border-bottom-color: #e2e2e2;
+  border-bottom-width: 1px;
+`;
+
+export const ServiceDescription = styled.Text`
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #4e4e4e;
+`;
