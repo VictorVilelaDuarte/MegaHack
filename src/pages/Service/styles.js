@@ -44,8 +44,35 @@ export const ViewDetails = styled.View`
   border-bottom-width: 1px;
 `;
 
+export const ViewDetailsIcon = styled.View`
+  /* padding: 10px; */
+  flex-direction: row;
+  justify-content: space-around;
+  border: 1px solid red;
+`;
+
 export const ServiceDescription = styled.Text`
   font-size: 24px;
   margin-bottom: 15px;
   color: #4e4e4e;
+`;
+
+export const IconView = styled.View`
+  width: 15%;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const Icon = styled.Image`
+  /* width: 15%; */
+  height: 40px;
+  width: 40px;
+`;
+
+export const ViewDetailsLabel = styled.View`
+  /* padding: 10px; */
+  width: 70%;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 1px solid red;
 `;

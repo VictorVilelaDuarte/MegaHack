@@ -6,6 +6,9 @@ import Modal from '../../components/Modal';
 import Back from '../../assets/back.png';
 import Search from '../../assets/search.png';
 import Sevice from '../../assets/serviceImage.png';
+import Card from '../../assets/card.png';
+import Day from '../../assets/day.png';
+import Go from '../../assets/go.png';
 
 import {
   Container,
@@ -16,6 +19,10 @@ import {
   ImageService,
   ViewDetails,
   ServiceDescription,
+  ViewDetailsIcon,
+  Icon,
+  IconView,
+  ViewDetailsLabel,
 } from './styles';
 
 const Service = ({navigation}) => {
@@ -53,10 +60,15 @@ const Service = ({navigation}) => {
             <ServiceDescription>R$250,00</ServiceDescription>
           </ViewDetails>
           <ViewDetails>
-            <ServiceDescription>
-              Orientação psicológica - Doutora Ana Paula (lorem ipsum dolor)
-            </ServiceDescription>
-            <ServiceDescription>R$250,00</ServiceDescription>
+            <ViewDetailsIcon>
+              <IconView>
+                <Icon source={Card} />
+              </IconView>
+              <ViewDetailsLabel />
+              <IconView>
+                <Icon source={Go} />
+              </IconView>
+            </ViewDetailsIcon>
           </ViewDetails>
         </Container>
       )}
