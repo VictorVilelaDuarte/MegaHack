@@ -7,6 +7,7 @@ import Video from './pages/Video';
 import Categories from './pages/Categories';
 import List from './pages/List';
 import Service from './pages/Service';
+import Confirm from './pages/Confirm';
 
 const Stack = createStackNavigator();
 
@@ -18,9 +19,10 @@ function App() {
           headerShown: false,
         }}>
         <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="Categories" component={Categories} />        
+        <Stack.Screen name="Categories" component={Categories} />
         <Stack.Screen name="List" component={List} />
         <Stack.Screen name="Service" component={Service} />
+        <Stack.Screen name="Confirm" component={Confirm} />
         <Stack.Screen name="Video" component={Video} />
       </Stack.Navigator>
     </NavigationContainer>

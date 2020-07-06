@@ -27,7 +27,7 @@ const ListFilter = ({itens}) => {
       </ItensView>
       <FilterView>
         <Filter>Filtrar</Filter>
-        <Arrow source={BlueArrow}/>
+        <Arrow source={BlueArrow} />
       </FilterView>
     </Container>
   );

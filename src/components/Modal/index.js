@@ -44,7 +44,7 @@ const Modal = ({detail, toogle}) => {
         <DetailView>
           <Detail>{detail}</Detail>
         </DetailView>
-        <Button onPress={() => toogle()}>
+        <Button onPress={() => toogle(1)}>
           <ButtonText>Entendi!</ButtonText>
         </Button>
       </Card>
