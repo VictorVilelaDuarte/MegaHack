@@ -1,6 +1,6 @@
 # Mercado serviços
 
-Criamos a nova categoria de serviços online que permite uma nova funcionalidade no marketplace, onde pessoas serão conectadas através de uma vídeo chamada pelo próprio site/aplicativo Mercado Livre.
+Criamos a nova categoria de serviços online que permite uma nova funcionalidade no marketplace, onde pessoas serão conectadas através de uma vídeo chamada pelo próprio site/aplicativo Mercado Livre. 
 
 ## O aplicativo
 
